@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "José Cabeda <jecabeda@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": "https://github.com/Cabeda/jecabeda-blog/issues"
   },
   "dependencies": {
     "gatsby": "^1.9.250",
@@ -34,7 +34,7 @@
     "gh-pages": "^1.1.0",
     "prettier": "^1.12.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/Cabeda/jecabeda-blog",
   "keywords": [
     "gatsby"
   ],
@@ -42,7 +42,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/Cabeda/jecabeda-blog.git"
   },
   "scripts": {
     "dev": "gatsby develop",
