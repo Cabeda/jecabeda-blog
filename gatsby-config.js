@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'JosÃ© Cabeda Blog',
-    author: 'JosÃ© cabeda',
+    title: 'José Cabeda Blog',
+    author: 'José cabeda',
     description: 'A blog about a simple software engineer',
     siteUrl: 'https://cabeda.me',
   },
