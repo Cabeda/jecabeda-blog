@@ -18,7 +18,7 @@ class Bio extends React.Component {
       >
         <img
           src={profilePic}
-          alt={`JosÈ Cabeda`}
+          alt={`JosÔøΩ Cabeda`}
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
@@ -29,8 +29,8 @@ class Bio extends React.Component {
         />
         <p>
          Hi there! I'm <strong>Jos√© Cabeda</strong>, a software developer writing a line of code at a time (when not travelling or reading some science fiction book)  {' '}
-          <a href="https://m.me/jecabeda">
-            Text me on Messenger
+          <a href="https://www.linkedin.com/in/jecabeda/">
+            Contact on Linkedin
           </a>
         </p>
       </div>

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'José Cabeda Blog',
-    author: 'José cabeda',
+    title: 'JosÃ© Cabeda Blog',
+    author: 'JosÃ© cabeda',
     description: 'A blog about a simple software engineer',
     siteUrl: 'https://cabeda.me',
   },
@@ -19,6 +19,19 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+              trackingId: "UA-120548932-1",
+              // Puts tracking script in the head instead of the body
+              head: false,
+              // Setting this parameter is optional
+              anonymize: true,
+              // Setting this parameter is also optional
+              respectDNT: true,
+              // Avoids sending pageview hits from custom paths
+              exclude: ["/preview/**", "/do-not-track/me/too/"],
+            }
+          },{
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
