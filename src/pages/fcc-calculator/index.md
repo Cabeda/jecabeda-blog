@@ -3,8 +3,6 @@ title: "Free Code Camp Calculator"
 date: "2018-06-18"
 ---
 
-# Free Code Camp Calculator
-
 To improve some of my knowledge of Frontend I took the FreeCodeCamp (FCC) course. It's a fantastic way to starting making some projects if you are just starting coding or don't have any ideia of where to start.
 
 This was one of my first projects in react and, although it isn't perfect, I think the result is pretty good.
