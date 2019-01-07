@@ -66,7 +66,7 @@ class Template extends React.Component {
         }}
       >
         {header}
-        {children()}
+        {children}
       </div>
     )
   }
