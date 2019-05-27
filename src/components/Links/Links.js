@@ -9,36 +9,61 @@ import {
   FaAddressCard,
 } from 'react-icons/fa';
 
-const Icon = styled.a`
+const Icon = styled.div`
+display: flex;
+justify-content:space-around;
 text-shadow: none;
 box-shadow: 'none';
 text-decoration: 'none';
 color: 'black';
+font-size: 2rem;
+text-decoration: none;
+`;
 
+const Link = styled.a`
+position: relative;
+box-shadow: none;
+&:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #007acc;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+&:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
 `;
 
 class Links extends Component {
   render() {
     return (
       <Icon>
-        <a href="https://codepen.io/Cabeda/">
+        <Link href="https://codepen.io/Cabeda/">
           <FaCodepen />
-        </a>
-        <a href="https://stackoverflow.com/users/3637832/jecabeda">
+        </Link>
+        <Link href="https://stackoverflow.com/users/3637832/jecabeda">
           <FaStackOverflow />
-        </a>
-        <a href="https://www.linkedin.com/in/jecabeda/">
+        </Link>
+        <Link href="https://www.linkedin.com/in/jecabeda/">
           <FaLinkedin />
-        </a>
-        <a href="https://github.com/Cabeda">
+        </Link>
+        <Link href="https://github.com/Cabeda">
           <FaGithub />
-        </a>
-        <a href="mailto:jecabeda@gmail.com">
+        </Link>
+        <Link href="mailto:jecabeda@gmail.com">
           <FaEnvelope />
-        </a>
-        <a href="https://drive.google.com/open?id=1Pa5w1Dv8AxiezI-6LKaVlPVmTB-b1DVV">
+        </Link>
+        <Link href="https://drive.google.com/open?id=1Pa5w1Dv8AxiezI-6LKaVlPVmTB-b1DVV">
           <FaAddressCard />
-        </a>
+        </Link>
       </Icon>
     )
   }

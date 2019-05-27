@@ -7,18 +7,19 @@ import 'typeface-merriweather'
 import profilePic from './profile-pic.webp'
 import { rhythm } from '../utils/typography'
 
+
 class Bio extends React.Component {
   render() {
     return (
       <div
         style={{
           display: 'flex',
-          marginBottom: rhythm(2.5),
+          //marginBottom: rhythm(2.5),
         }}
       >
         <img
           src={profilePic}
-          alt={`JosÃ© Cabeda Profile Image`}
+          alt={`José Cabeda Profile Image`}
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
