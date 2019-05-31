@@ -2,6 +2,14 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import { rhythm, scale } from '../utils/typography'
+import "./layout.css"
+import styled from 'styled-components';
+import { DarkModeToggler } from '../components/DarkModeToggler/darkmodetoggler.component'
+
+const Row = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
 class Template extends React.Component {
   render() {
@@ -47,7 +55,7 @@ class Template extends React.Component {
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: 'inherit',
+              color: 'var(--textNormal)',
             }}
             to={'/'}
           >
@@ -56,6 +64,8 @@ class Template extends React.Component {
         </h3>
       )
     }
+
+    
     return (
       <div
         style={{
@@ -65,7 +75,10 @@ class Template extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
+        <Row>
         {header}
+        <DarkModeToggler />
+        </Row>
         {children}
       </div>
     )

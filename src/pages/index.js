@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import Bio from '../components/Bio'
@@ -12,7 +12,7 @@ import icon32 from '../../static/favicon.ico'
 
 class BlogIndex extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
