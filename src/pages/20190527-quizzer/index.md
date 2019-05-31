@@ -34,7 +34,7 @@ The create-react-app has a default structure as seen below.
 
 I'm using VS Code as my IDE (the .vscode folder is created to hold files for debugging among other things) and other files like package.json (node.js) and now.json (zeit now) are important but aren't specific to the application. The juice of the application is in the src folder. 
 
-The application only has one router which points to the main component "Quiz".  This component is a [smart component](https://duo.google.com/) which holds the quiz state. The other components are:
+The application only has one router which points to the main component "Quiz".  This component is a [smart component](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) which holds the quiz state. The other components are:
 
 - Lost Game - Presents the final message.
 - Progress - A thin layer to track how long it is on the quiz
