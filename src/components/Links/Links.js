@@ -30,13 +30,14 @@ box-shadow: none;
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #007acc;
+  background-color: var(--textLink);
   transform-origin: bottom right;
   transform: scaleX(0);
   transition: transform 0.5s ease;
 }
 
 &:hover::before {
+  text-decoration-color: red;
   transform-origin: bottom left;
   transform: scaleX(1);
 }
