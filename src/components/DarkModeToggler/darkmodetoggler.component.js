@@ -7,27 +7,27 @@ export class DarkModeToggler extends React.Component {
     return (
       <ThemeToggler>
         {({ theme, toggleTheme }) => (
-          <div class="wrap">
+          <div className="wrap">
             <input
               type="checkbox"
               onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
               checked={theme === 'dark'}
             />{' '}
-            <div class="totoro">
-              <div class="ears">
-                <div class="ear" />
-                <div class="ear" />
+            <div className="totoro">
+              <div className="ears">
+                <div className="ear" />
+                <div className="ear" />
               </div>
-              <div class="arm" />
-              <div class="arm" />
-              <div class="foot" />
-              <div class="foot two" />
-              <div class="body">
-                <div class="spots" />
-                <div class="inner">
-                  <div class="mouth" />
-                  <div class="eye" />
-                  <div class="eye" />
+              <div className="arm" />
+              <div className="arm" />
+              <div className="foot" />
+              <div className="foot two" />
+              <div className="body">
+                <div className="spots" />
+                <div className="inner">
+                  <div className="mouth" />
+                  <div className="eye" />
+                  <div className="eye" />
                 </div>
               </div>
             </div>

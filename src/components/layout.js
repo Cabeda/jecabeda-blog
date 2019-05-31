@@ -21,28 +21,28 @@ class Template extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            José Cabeda's Blog
-          </Link>
-        </h1>
-      )
-    } else {
+    // if (location.pathname === rootPath) {
+    //   header = (
+    //     <h1
+    //       style={{
+    //         ...scale(1.5),
+    //         marginBottom: rhythm(1.5),
+    //         marginTop: 0,
+    //       }}
+    //     >
+    //       <Link
+    //         style={{
+    //           boxShadow: 'none',
+    //           textDecoration: 'none',
+    //           color: 'inherit',
+    //         }}
+    //         to={'/'}
+    //       >
+    //         José Cabeda's Blog
+    //       </Link>
+    //     </h1>
+    //   )
+    // } else {
       header = (
         <h3
           style={{
@@ -63,7 +63,7 @@ class Template extends React.Component {
           </Link>
         </h3>
       )
-    }
+    // }
 
     
     return (
