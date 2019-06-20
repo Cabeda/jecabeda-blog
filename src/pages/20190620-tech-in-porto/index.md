@@ -139,14 +139,6 @@ The second improvement, automatic model selection showed some odd results pointi
 
 Key points of auto model monitoring
 
-## Adding unit tests to database deployment pipeline
-
-Todo
-
-## Make Your Data FABulous
-
-Todo
-
 ## Wrapping up
 
 I found that some of the talks had new  and interesting ideas. The ones related to data were specially important for me but I don't think I found one that was specially mind blowing. There were some mishaps with the sound system but in the overall the conference was well organised and I hope there's more like this in Porto :-)
