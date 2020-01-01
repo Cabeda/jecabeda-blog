@@ -1,6 +1,6 @@
 ---
-title: "A perspective on Tech In Porto"
-date: "2019-06-20"
+title: 'A perspective on Tech In Porto'
+date: '2019-06-20'
 ---
 
 ![](https://images.unsplash.com/photo-1555881400-89d5a9c86668?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb)
@@ -9,7 +9,7 @@ A conference in Porto is a good conference :-p
 
 ## Intro
 
-Hi! I've attended Tech In Porto and I thought I'd write a brief summary of my experience. The conference started in 2017 and is organized by Jumia, an equivalent of Amazon but with origins in Nigeria. 
+Hi! I've attended Tech In Porto and I thought I'd write a brief summary of my experience. The conference started in 2017 and is organized by Jumia, an equivalent of Amazon but with origins in Nigeria.
 
 The conference was divided into two rooms and I was lucky enough that there weren't any talks that I wanted to attend happening simultaneously (kudos for that). Below you can find the entire program
 
@@ -21,15 +21,15 @@ Below are some of the notes I took of the talks I went. Some are more complete t
 
 ## Micro ships history
 
-The first talk was all related to the history of microchips. Not my area of expertise but it was cool to see the evolution from 1950 to today with examples such as Xbox One which applies a technique called system on a ship. As the development of ships can take a long time from the first prototype until the discovery of flaws, engineers are starting to invest in the use of software to simulate hardware and speed up the process. The talk was presented by Carlos Palminha. You can check his Bio below.  
+The first talk was all related to the history of microchips. Not my area of expertise but it was cool to see the evolution from 1950 to today with examples such as Xbox One which applies a technique called system on a ship. As the development of ships can take a long time from the first prototype until the discovery of flaws, engineers are starting to invest in the use of software to simulate hardware and speed up the process. The talk was presented by Carlos Palminha. You can check his Bio below.
 
 ![](Untitled-f1a55195-bb9d-4d51-b9b2-fadb639e74f1.png)
 
 ## Microservices 101
 
-This talk was funny as it was the first time I saw an alumni, graduated in the same year as me, present at a conference. 
+This talk was funny as it was the first time I saw an alumni, graduated in the same year as me, present at a conference.
 
-The talk was really a 101, with a brief presentation of Microservices, which are promoted as an evolution from monolithic architectures.  However, there are some cons, being one of them a bigger overhead in the initial development phase and in management. Nonetheless, for teams with a fast pacing and a certain size, it can be a good fit. 
+The talk was really a 101, with a brief presentation of Microservices, which are promoted as an evolution from monolithic architectures. However, there are some cons, being one of them a bigger overhead in the initial development phase and in management. Nonetheless, for teams with a fast pacing and a certain size, it can be a good fit.
 
 Afterward, Neves presents three ways of migrating from monolithic to microservices being them:
 
@@ -37,7 +37,7 @@ Afterward, Neves presents three ways of migrating from monolithic to microservic
 - Strangler pattern
 - Branch by abstraction
 
-They are all well suited for their use cases but I am frankly more inclined to the strangler pattern. 
+They are all well suited for their use cases but I am frankly more inclined to the strangler pattern.
 
 At the end of the talk, we were presented with techniques for testing and monitoring (which are overlooked too many times).
 
@@ -49,7 +49,7 @@ This was one of two talks given by Talkdesk (disclosure: the ompany I work in) a
 
 ![](IMG_20190613_120948-6fa1bf8e-3cec-44f2-97d3-7e1a4fbb500e.jpg)
 
-Merkle trees are binary trees of an infinite number of cryptographic hashes with leaves pointing to a data block. At first, this might seem to be just jargon but gradually I started to see it's importance. Some use cases are auditing of databases, peer to peer file transfer and copy on write. 
+Merkle trees are binary trees of an infinite number of cryptographic hashes with leaves pointing to a data block. At first, this might seem to be just jargon but gradually I started to see it's importance. Some use cases are auditing of databases, peer to peer file transfer and copy on write.
 
 This talk might not be for everyone but I found it to be extremely interesting and I love when you have that Eureka moment where everything becomes clear.
 
@@ -83,7 +83,7 @@ To that end, the talk was divided into 4 ages: Stone, Tool, Bronze and Iron.
 
 Some technical problems overlooked by a unicorn
 
-The stone age was a period where, according to Pedro, even the CEO would come and help. If there was an alert, it was all hands on deck. 
+The stone age was a period where, according to Pedro, even the CEO would come and help. If there was an alert, it was all hands on deck.
 
 Next, the tool age started by implementing some tools to monitor the health of the system (ex: VictorOps) and setting up some processes (ex: blameless post mortem). However, with too much alerts and with even alarms on staging, there were some cases of burn out.
 
@@ -101,9 +101,9 @@ Second day, a new day!
 
 ## Service mesh
 
-This was a talk I was very interested in as I have been listening to some [podcasts](https://softwareengineeringdaily.com/2019/06/06/service-mesh-interface-with-lachlan-evenson/) related to this new concept (new to me at least). 
+This was a talk I was very interested in as I have been listening to some [podcasts](https://softwareengineeringdaily.com/2019/06/06/service-mesh-interface-with-lachlan-evenson/) related to this new concept (new to me at least).
 
-The service mesh promises to solve some higher order problems that kubernets doesn't. One of the most recognised programs, and presented in this talk by Ricardo Castro is [Istio](https://istio.io/), developed mainly by Google. 
+The service mesh promises to solve some higher order problems that kubernets doesn't. One of the most recognised programs, and presented in this talk by Ricardo Castro is [Istio](https://istio.io/), developed mainly by Google.
 
 In this service the main components are:
 
@@ -113,13 +113,13 @@ In this service the main components are:
 - Citadel
 - Galley
 
-After presenting the main components, Ricardo showed another aspect that makes this type of architecture interesting. Chaos testing. The main idea is that, by shutting down some nodes or components from the production system, we can check the resiliency of the system. I had only seen this being implemented by Netflix and [Gremlin](https://www.gremlin.com/) so it's nice to see this branch of engineering growing (but this isn't my area of expertise). 
+After presenting the main components, Ricardo showed another aspect that makes this type of architecture interesting. Chaos testing. The main idea is that, by shutting down some nodes or components from the production system, we can check the resiliency of the system. I had only seen this being implemented by Netflix and [Gremlin](https://www.gremlin.com/) so it's nice to see this branch of engineering growing (but this isn't my area of expertise).
 
-Another idea presented was that of monitoring, that can be done with the help of Jaeger UI (and other alternatives). Finally, the presentation ended with how to get a snapshot of the mesh (called service graph). 
+Another idea presented was that of monitoring, that can be done with the help of Jaeger UI (and other alternatives). Finally, the presentation ended with how to get a snapshot of the mesh (called service graph).
 
 ## Automating the full Data Science pipeline
 
-The talk presented by Miguel Araújo, data science manager at Feedzai was an interesting one. He started by explaining the main business, fraud detection, and then went into showing some of the work done to automate data science (autoML) and improve the models  in the process. 
+The talk presented by Miguel Araújo, data science manager at Feedzai was an interesting one. He started by explaining the main business, fraud detection, and then went into showing some of the work done to automate data science (autoML) and improve the models in the process.
 
 ![](image-1560510592332-b67de86b-5ec3-4378-9398-20d416a0530b.jpg4702293714369671287.jpg)
 
@@ -127,7 +127,7 @@ Some autoML services
 
 There were three improvements that Miguel focused on. **Semantic aware feature engineering**, **automatic model selection** and **auto** **model monitoring**.
 
-The first one, and what I deemed as the most interesting, focuses on detecting the best possible features automatically by using  tags picked up apriori. This is called feature engineering and Miguel showed some numbers alleging that their methods (in the process of patenting) was much faster and worked at least as good as humans.
+The first one, and what I deemed as the most interesting, focuses on detecting the best possible features automatically by using tags picked up apriori. This is called feature engineering and Miguel showed some numbers alleging that their methods (in the process of patenting) was much faster and worked at least as good as humans.
 
 ![](IMG_20190614_121444-4d40158b-84f7-40db-9efa-2537ed9ad8d9.jpg)
 
