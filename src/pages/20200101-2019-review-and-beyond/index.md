@@ -54,7 +54,7 @@ Another thing I need to improve is my focus. To this end I'm really doubling dow
 
 ## Summary
 
-2020 is the year where I learn more by contributing to the community. There are thing I completely failed and I'm taking a different approach (gym vs swimming) and others which I'm quite satisfied (travelled a bit through Europe).
+2020 is the year where I learn more by contributing to the community. There are things I completely failed and I'm taking a different approach (gym vs swimming) and others which I'm quite satisfied (travelled a bit through Europe).
 Personally I'm trying to be a bit more relaxed and focused.
 
 2020 will bring surprises for sure :-)
