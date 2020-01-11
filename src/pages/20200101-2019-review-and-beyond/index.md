@@ -5,7 +5,7 @@ date: '2020-06-20'
 
 ![Budapest Christmas market](budapest.jpg)
 
-2019 was a good and challenging year. Looking back at the article [I wrote](../20190107-objectives-2019/index.md) it seems I've done more than I hoped (I'm a bit pessimistic at times).
+2019 was a good and challenging year. Looking back at the article [I wrote](../20190107-objectives-2019/index.md), it seems I've done more than I hoped (I'm a bit pessimistic at times).
 
 Following the previous year structure I'll divide my review in the following categories:
 
@@ -15,7 +15,7 @@ Following the previous year structure I'll divide my review in the following cat
 - Travels
 - Personal
 
-The travels and personal were in an "Others" category but I find them as important as the others.
+The travels and personal were in an "Others" category but I've found them as important.
 
 ## Work
 
