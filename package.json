@@ -2,12 +2,12 @@
   "name": "jecabeda-blog",
   "description": "José Cabeda's Blog",
   "version": "1.0.0",
-  "author": "Jos� Cabeda <jecabeda@gmail.com>",
+  "author": "José Cabeda <jecabeda@gmail.com>",
   "bugs": {
     "url": "https://github.com/Cabeda/jecabeda-blog/issues"
   },
   "engines": {
-    "node": ">=12.x" 
+    "node": ">=12.x"
   },
   "dependencies": {
     "babel-plugin-styled-components": "~1.10.6",
