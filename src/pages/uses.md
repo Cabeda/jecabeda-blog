@@ -7,28 +7,31 @@ List of all my technologies, hardware, etc
 
 ## Hardware
 
-- [Work] Macbook Pro 2017
-- [Personal] Nvidia GTX 970 (to be improved)
+### Work
 
-## Terminal
+- Macbook Pro 2017
 
-- Oh my ZSH
-- iterm2
-- [MAC only] Run [gist](https://gist.github.com/Cabeda/ee88649f26df39f2ca002e7bacba76c5) to install
+### Personal
 
-## Monitor
+- Graphics: Nvidia GTX 970
+- Monitor: LG Flatron W2253v
+- Keyboard: Trust 16601-02
 
-- LG Flatron W2253v
-
-## IDE & Editors
+## Editor + Terminal
 
 - VS Code (theme: Dark+)
 - Postico
 - Google Docs
+- Oh my ZSH
+- [MAC only] Iterm2
+- [MAC only] Run [gist](https://gist.github.com/Cabeda/ee88649f26df39f2ca002e7bacba76c5) to install
 
-## Organizing
+## Desktop Apps
 
 - Notion
+- Spotify
+- Google Drive
+- Keybase
 
 ## Browser
 
