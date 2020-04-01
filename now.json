@@ -3,5 +3,10 @@
     "name": "gatsby",
     "builds": [
         { "src": "package.json", "use": "@now/static-build", "config": {"distDir": "public"} }
-    ]
+    ],
+    "routes": [
+        { "handle": "filesystem" },
+        { "src": "/.*", "dest": "/index.html" }
+      ]
 }
+  
