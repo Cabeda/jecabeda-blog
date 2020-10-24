@@ -1,6 +1,6 @@
 ---
-title: "Homie Stack"
-date: "2020-03-31"
+title: 'Uses'
+date: '2020-10-24'
 ---
 
 List of all my technologies, hardware, etc
@@ -17,23 +17,30 @@ List of all my technologies, hardware, etc
 - Monitor: LG Flatron W2253v
 - Keyboard: Trust 16601-02
 
-## Editor + Terminal
+## DevTools
 
 - VS Code (theme: Dark+)
-- Postico
 - Google Docs
+- Alacritty
 - Oh my ZSH
-- [MAC only] Iterm2
-- [MAC only] Run [gist](https://gist.github.com/Cabeda/ee88649f26df39f2ca002e7bacba76c5) to install
+- Insomnia
+- Keybase
 
 ## Desktop Apps
 
 - Notion
 - Spotify
 - Google Drive
-- Keybase
+- Bitwarden
+- VLC
 
 ## Browser
 
 - [Personal] Firefox
 - [Work] Chrome
+
+## Configs & scripts
+
+Check my repo for an updated list of configs and setup scripts :-)
+
+- [MAC only] Run [gist](https://gist.github.com/Cabeda/ee88649f26df39f2ca002e7bacba76c5) to install
