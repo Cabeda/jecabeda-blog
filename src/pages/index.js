@@ -1,26 +1,21 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/layout'
+import Template from '../components/layout'
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
 import Links from '../components/Links/Links'
 import icon32 from '../../static/favicon.ico'
 
-class BlogIndex extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+export default function BlogIndex({location, data}) {
 
-  render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const siteTitle = data.site.siteMetadata.title
+    const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location}>
+      <Template location={location}>
         <div>
           <Helmet
             title={siteTitle}
@@ -41,7 +36,8 @@ class BlogIndex extends React.Component {
           <Bio />
           <Links />
           {posts.map(({ node }) => {
-            const title = get(node, 'frontmatter.title') || node.fields.slug
+            
+            const title = node?.frontmatter?.title || node?.fields?.slug
             return (
               <div key={node.fields.slug}>
                 <h3
@@ -59,12 +55,9 @@ class BlogIndex extends React.Component {
             )
           })}
         </div>
-      </Layout>
+      </Template>
     )
   }
-}
-
-export default BlogIndex
 
 export const pageQuery = graphql`
   query IndexQuery {

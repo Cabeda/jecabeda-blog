@@ -1,42 +1,41 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
 
 // Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
+import "typeface-montserrat";
+import "typeface-merriweather";
 
-import profilePic from './profile-pic.webp'
-import { rhythm } from '../utils/typography'
+import profilePic from "./profile-pic.webp";
+import { rhythm } from "../utils/typography";
 
+const BioStyle = styled.div`
+  position: relative;
+  display: grid;
+  grid-template-columns: 100%px 1fr;
+  margin-bottom: ${rhythm(2.5)};
+`;
 
-class Bio extends React.Component {
-  render() {
-    return (
-      <div
-        style={{
-          display: 'flex',
-          //marginBottom: rhythm(2.5),
-        }}
-      >
-        <img
-          src={profilePic}
-          alt={`JosÈ Cabeda Profile Image`}
-          style={{
-            marginRight: rhythm(1 / 2),
-            marginBottom: 0,
-            width: rhythm(3),
-            height: rhythm(3),
-            borderRadius: '50%'
-          }}
-        />
-        <p>
-         Hi there! I'm <strong>Jos√© Cabeda</strong>, a software developer writing a line of code at a time (when not travelling or reading some science fiction book)  {' '}
-          <a href="https://www.linkedin.com/in/jecabeda/">
-            Contact on Linkedin
-          </a>
-        </p>
-      </div>
-    )
-  }
+const ImageBio = styled.img`
+  margin-bottom: 0;
+  /* width: ${rhythm(3)}; */
+  border-radius: 50%;
+  display: block;
+`;
+
+const Resume = styled.p`
+  margin-left: 1rem;
+  margin-bottom: 0;
+`;
+
+export default function Bio() {
+  return (
+    <BioStyle>
+      <ImageBio src={profilePic} alt={`JosÈ Cabeda`} />
+      <Resume>
+        I'm <strong>Jose Cabeda</strong>, a software developer writing a line of
+        code at a time (when not travelling or reading some science fiction
+        book)
+      </Resume>
+    </BioStyle>
+  );
 }
-
-export default Bio

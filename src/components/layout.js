@@ -1,65 +1,44 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react";
+import Link from "gatsby-link";
+import styled from "styled-components";
 
-import { rhythm, scale } from '../utils/typography'
-import "./layout.css"
-import styled from 'styled-components';
-import { DarkModeToggler } from '../components/DarkModeToggler/darkmodetoggler.component'
+import { rhythm } from "../utils/typography";
+import LayoutStyles from "./layoutStyles";
 
 const Row = styled.div`
   display: flex;
   justify-content: space-between;
 `;
 
-class Template extends React.Component {
-  render() {
-    const { location, children } = this.props
-    let header
+const TemplateTitle = styled.h3`
+  font-family: Montserrat, sans-serif;
+  margin-top: 0;
+  padding-bottom: ${rhythm(1)};
+`;
 
-    let rootPath = `/`
-    if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
-      rootPath = __PATH_PREFIX__ + `/`
-    }
+const LinkStyle = styled.a`
+  box-shadow: none;
+  text-decoration: none;
+  color: var(--textNormal);
+`;
 
-      header = (
-        <h3
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-            marginBottom: rhythm(-1),
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'var(--textNormal)',
-            }}
-            to={'/'}
-          >
-            José Cabeda's Blog
-          </Link>
-        </h3>
-      )
-
-    
-    return (
-      <div
-        style={{
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
-        <Row>
-        {header}
-        <DarkModeToggler />
-        </Row>
-        {children}
-      </div>
-    )
-  }
+function Header() {
+  return (
+    <TemplateTitle>
+      <LinkStyle>
+        <Link to={"/"}>José Cabeda's Blog</Link>
+      </LinkStyle>
+    </TemplateTitle>
+  );
 }
 
-export default Template
+export default function Template({ children }) {
+  return (
+    <LayoutStyles>
+      <Row>
+        <Header></Header>
+      </Row>
+      {children}
+    </LayoutStyles>
+  );
+}

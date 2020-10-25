@@ -1,6 +1,6 @@
 ---
-title: "Building Quizzer"
-date: "2019-05-26"
+title: 'Building Quizzer'
+date: '2019-05-26'
 ---
 
 A JSON-based quiz shuffler.
@@ -32,9 +32,9 @@ The create-react-app has a default structure as seen below.
 
 ![](Untitled-2674a39e-b1e1-45e1-b885-6194bb851dc6.png)
 
-I'm using VS Code as my IDE (the .vscode folder is created to hold files for debugging among other things) and other files like package.json (node.js) and now.json (zeit now) are important but aren't specific to the application. The juice of the application is in the src folder. 
+I'm using VS Code as my IDE (the .vscode folder is created to hold files for debugging among other things) and other files like package.json (node.js) and now.json (zeit now) are important but aren't specific to the application. The juice of the application is in the src folder.
 
-The application only has one router which points to the main component "Quiz".  This component is a [smart component](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) which holds the quiz state. The other components are:
+The application only has one router which points to the main component "Quiz". This component is a [smart component](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) which holds the quiz state. The other components are:
 
 - Lost Game - Presents the final message.
 - Progress - A thin layer to track how long it is on the quiz
@@ -50,7 +50,7 @@ Shuffer of the questions (kudos to Mike Bostock [https://bost.ocks.org/mike/shuf
 
 To import the quiz I decided to simplify and do two things. Define the quiz as an interface using typescript and import it as a JSON file.
 
-The quiz has the following structure 
+The quiz has the following structure
 
     export interface Quizzer {
     	Title,
@@ -65,24 +65,24 @@ The quiz has the following structure
     			Answers: [
     				Answer,
     				IsCorrect
-    			]			
+    			]
     		]
     	]
     }
 
 In this structure it's possible to set a Timer for each question and let the user give up between questions. As the quiz might have multiple types of questions or just difficulties, the questions were divided by phases which might have only a set of questions that need to be answered.
 
-Finally, and as a way to simplify the application, there are only one type of questions. Each one can have one image, and it's possible to set multiple options. I realize that with this structure it's possible to have multiple answers right but it simplified the application logic ¯\*(ツ)*/¯.
+Finally, and as a way to simplify the application, there are only one type of questions. Each one can have one image, and it's possible to set multiple options. I realize that with this structure it's possible to have multiple answers right but it simplified the application logic ¯\*(ツ)\*/¯.
 
 ## Heck! I just want to see the final product
 
 Yah I know, you want to know how it works and if it's any good. Well, this is super simplified with some quirks but for the following it works very well.
 
-First, you are given this entry page. 
+First, you are given this entry page.
 
 ![](Untitled-42fd50f6-78be-452a-be43-9e8ac394cdf1.png)
 
-A beautiful  page I know
+A beautiful page I know
 
 You can download the template file and edit as you wish. Just follow the structure set on previous section. After you're done, you can drag it to the drop zone and VOILÁ. The quiz starts.
 
@@ -102,4 +102,4 @@ And that's it!!!
 
 ## Conclusions
 
-This small application does the bare minimum set at the beginning. I've quickly deployed it to netlify and you can try it at [quizzer.cabeda.me](http://quizzer.cabeda.me). I'd like to clean a bit the code and add at least a quiz builder (might take a look into unform react library). It was also a good way to experiment with some technologies like react hooks and css  grid.
+This small application does the bare minimum set at the beginning. I've quickly deployed it to netlify and you can try it at [quizzer.cabeda.me](http://quizzer.cabeda.me). I'd like to clean a bit the code and add at least a quiz builder (might take a look into unform react library). It was also a good way to experiment with some technologies like react hooks and css grid.

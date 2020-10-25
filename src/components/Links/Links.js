@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import {
   FaLinkedin,
   FaGithub,
-  FaCodepen,
   FaStackOverflow,
   FaEnvelope,
   FaAddressCard,
@@ -43,13 +42,9 @@ box-shadow: none;
 }
 `;
 
-class Links extends Component {
-  render() {
+export default function Links() {
     return (
       <Icon>
-        <Link href="https://codepen.io/Cabeda/">
-          <FaCodepen />
-        </Link>
         <Link href="https://stackoverflow.com/users/3637832/jecabeda">
           <FaStackOverflow />
         </Link>
@@ -68,6 +63,3 @@ class Links extends Component {
       </Icon>
     )
   }
-}
-
-export default Links

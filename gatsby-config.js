@@ -33,19 +33,6 @@ module.exports = {
       options: {
         plugins: [`gatsby-plugin-styled-components`,
           {
-            resolve: `gatsby-plugin-google-analytics`,
-            options: {
-              trackingId: "UA-120548932-1",
-              // Puts tracking script in the head instead of the body
-              head: false,
-              // Setting this parameter is optional
-              anonymize: true,
-              // Setting this parameter is also optional
-              respectDNT: true,
-              // Avoids sending pageview hits from custom paths
-              exclude: ["/preview/**", "/do-not-track/me/too/"],
-            }
-          },{
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
@@ -63,7 +50,6 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-dark-mode',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,
