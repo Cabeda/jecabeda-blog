@@ -16,6 +16,7 @@ const BioStyle = styled.div`
 `;
 
 const ImageBio = styled.img`
+  width:100%;
   margin-bottom: 0;
   /* width: ${rhythm(3)}; */
   border-radius: 50%;
