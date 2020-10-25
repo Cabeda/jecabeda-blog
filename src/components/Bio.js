@@ -11,7 +11,7 @@ import { rhythm } from "../utils/typography";
 const BioStyle = styled.div`
   position: relative;
   display: grid;
-  grid-template-columns: 100%px 1fr;
+  grid-template-columns: 100px 1fr;
   margin-bottom: ${rhythm(2.5)};
 `;
 
