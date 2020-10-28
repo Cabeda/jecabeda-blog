@@ -1,11 +1,15 @@
-module.exports = {
+import dotenv from "dotenv";
+
+dotenv.config({ path: ".env" });
+
+export default {
   siteMetadata: {
-    title: 'José Cabeda Blog',
-    author: 'José cabeda',
-    description: 'A blog about a simple software engineer',
-    siteUrl: 'https://cabeda.me',
+    title: "José Cabeda Blog",
+    author: "José cabeda",
+    description: "A blog about a simple software engineer",
+    siteUrl: "https://cabeda.me",
   },
-  pathPrefix: '/jecabeda-blog',
+  pathPrefix: "/jecabeda-blog",
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
@@ -15,23 +19,22 @@ module.exports = {
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
-        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
-        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
-        icon: `static/favicon.png`, // This path is relative to the root of the site.
+        icon: `static/favicon.png`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages',
+        name: "pages",
       },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-plugin-styled-components`,
+        plugins: [
+          `gatsby-plugin-styled-components`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -44,9 +47,9 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
+          "gatsby-remark-prismjs",
+          "gatsby-remark-copy-linked-files",
+          "gatsby-remark-smartypants",
         ],
       },
     },
@@ -56,10 +59,10 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: "gatsby-plugin-typography",
       options: {
-        pathToConfigModule: 'src/utils/typography',
+        pathToConfigModule: "src/utils/typography",
       },
     },
   ],
-}
+};
