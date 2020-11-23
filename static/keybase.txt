@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/cabeda
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://cabeda.me
+  * I am cabeda (https://keybase.io/cabeda) on keybase.
+  * I have a public key ASA4v7vOEl48yYoVIctmQTMyoltOZjsijKkfa5WW8tcmbAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120cd0dabb0d2fcd69a5ca36e8b758fa9607da7acf5cd6246927ace4a0d323539d20a",
+      "host": "keybase.io",
+      "kid": "012038bfbbce125e3cc98a1521cb66413332a25b4e663b228ca91f6b9596f2d7266c0a",
+      "uid": "1e6c18af96f2b9c9989ab813495c2f19",
+      "username": "cabeda"
+    },
+    "merkle_root": {
+      "ctime": 1606153653,
+      "hash": "bc565ad529e28d26c36488b0e6b4516d3140c40a92f115a8349683ce825388eecc5829b71d11a9e0301fc1667f02c7d5f611e7f242c143dc04369de98f7e5f94",
+      "hash_meta": "be6f6df3b2b4f309a708d131841bcc1e6af0472a890c3de496737b353fc04c7e",
+      "seqno": 18204372
+    },
+    "service": {
+      "entropy": "g4XbxsLJu/kvkaV2sCmTxnHS",
+      "hostname": "cabeda.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1606153705,
+  "expire_in": 504576000,
+  "prev": "8da2f5aeae2fe7b9a68df33e03b4da3efa1360246f01cfdfd22061a122a92a0b",
+  "seqno": 40,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgOL+7zhJePMmKFSHLZkEzMqJbTmY7IoypH2uVlvLXJmwKp3BheWxvYWTESpcCKMQgjaL1rq4v57mmjfM+A7TaPvoTYCRvAc/f0iBhoSKpKgvEIKu5LFxbZg2lPaqWA1QSxgWepIkWHicVDownO2yZfVqtAgHCo3NpZ8RAcbfifORCJFRBBFxnoa8sDo1eaVQ7qd6XgXZM/y2YssBVt6L13wK9O6T2LPgM/wmF2O0JF5Wfyl8JtKzxPmkuDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJ3DRpjxLxg+cvZ4ApzO/agS0oNRTvu5f5fI4+m8ipbVo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cabeda
+
+==================================================================
