@@ -1,5 +1,5 @@
 ---
-title: "2020. Such a great year"
+title: "2020 review and beyond"
 date: "2021-01-03"
 ---
 
