@@ -3,6 +3,8 @@ title: "2020. Such a great year"
 date: "2021-01-03"
 ---
 
+![Budapest Christmas market](sintra.jpg)
+
 Just like most people I know (and seems like all world) the pandemic took hold of a big chunk of my life. Fortunately, I was able to cope with most of it. I haven't given a second of notice to this blog but I've published an article on [talkdesk's](https://engineering.talkdesk.com/business-intelligence-a-road-from-staging-to-production-b708a662c668)). For this year I'm hoping on giving it more time and focus. As such, while last year I talked about other things than technical themes I'll give my best to keep it related to data engineering, analytics, and maybe some software engineering in general. As such I've divided the article into the following topics.
 
 - [Data Observability](#data-observability)
