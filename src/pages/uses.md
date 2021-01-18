@@ -9,7 +9,7 @@ List of all my technologies, hardware, etc
 
 ### Work
 
-- Macbook Pro 2017
+- Macbook Pro 2020
 
 ### Personal
 
@@ -20,27 +20,28 @@ List of all my technologies, hardware, etc
 ## DevTools
 
 - VS Code (theme: Dark+)
-- Google Docs
 - Alacritty
 - Oh my ZSH
 - Insomnia
-- Keybase
 
-## Desktop Apps
+## Communication
 
-- Notion
-- Spotify
-- Google Drive
-- Bitwarden
-- VLC
-
+- Keybase (sensitive info)
+- Slack
+  
 ## Browser
 
 - [Personal] Firefox
 - [Work] Chrome
 
+## Others
+
+- Bitwarden
+- Notion
+- Spotify
+- Google Drive
+- VLC
+
 ## Configs & scripts
 
-Check my repo for an updated list of configs and setup scripts :-)
-
-- [MAC only] Run [gist](https://gist.github.com/Cabeda/ee88649f26df39f2ca002e7bacba76c5) to install
+Check my [dotfiles repo](https://github.com/cabeda/dotfiles) for an updated list of configs and setup scripts :-)
