@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'José Cabeda Blog',
+    title: 'José Cabeda',
     author: 'José cabeda',
-    description: 'A blog about a simple software engineer',
+    description: 'A personal corner for a data engineer',
     siteUrl: 'https://cabeda.me',
   },
   pathPrefix: '/jecabeda-blog',
@@ -10,15 +10,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `José Cabeda's Blog`,
-        short_name: `JC Blog`,
+        name: `José Cabeda`,
+        short_name: `JC`,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
-        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
-        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
-        icon: `static/favicon.png`, // This path is relative to the root of the site.
+        icon: `static/favicon.png`,
       },
     },
     {

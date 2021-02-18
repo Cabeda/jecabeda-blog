@@ -33,9 +33,7 @@ export default function Bio() {
     <BioStyle>
       <ImageBio src={profilePic} alt={`José Cabeda`} />
       <Resume>
-        I'm <strong>Jose Cabeda</strong>, a software developer writing a line of
-        code at a time (when not travelling or reading some science fiction
-        book)
+        I'm <strong>Jose Cabeda</strong>, a data engineer focused on improving data systems and educating on how to use them. I also do a lot of planning and read as much as I can.
       </Resume>
     </BioStyle>
   );
