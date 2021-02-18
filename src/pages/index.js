@@ -23,7 +23,7 @@ export default function BlogIndex({location, data}) {
               {
                 name: 'description',
                 content:
-                  'A personal blog about a software engineer focused on data and stories',
+                  'A personal blog about a data engineer focused on data and stories',
               },
               {
                 name: 'keywords',

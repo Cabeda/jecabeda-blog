@@ -26,7 +26,7 @@ function Header() {
   return (
     <TemplateTitle>
       <LinkStyle>
-        <Link to={"/"}>José Cabeda's Blog</Link>
+        <Link to={"/"}>José Cabeda</Link>
       </LinkStyle>
     </TemplateTitle>
   );
