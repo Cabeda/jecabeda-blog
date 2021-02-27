@@ -57,7 +57,7 @@ export default function Links() {
         <Link href="mailto:jecabeda@gmail.com">
           <FaEnvelope />
         </Link>
-        <Link href="https://drive.google.com/open?id=1Pa5w1Dv8AxiezI-6LKaVlPVmTB-b1DVV">
+        <Link href="https://docs.google.com/document/d/e/2PACX-1vS6y82gwoGuClfA1GbsBg1vrr4mJf3c5mlovw5E5VS69Qeo0hYGA-LEEsiFF2fdLu6xnAFXoequt2il/pub">
           <FaAddressCard />
         </Link>
       </Icon>
