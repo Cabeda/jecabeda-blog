@@ -9,7 +9,7 @@ This week I've gotten to read a lot on architecture. I'm still trying to reduce 
 
 ## Analysis
 
-I can't recommend enought Our world in data, a source of multiple insights on how we are faring globally. This website has been heavily used for the book Enlighment now and I've gotten around to read [Global poverty in an unequal world](https://ourworldindata.org/higher-poverty-global-line) which presents a deep dive into how we measure poverty and how we could improve it.
+I can't recommend enough Our world in data, a source of multiple insights on how we are faring globally. This website has been heavily used for the book Enlighment now and I've gotten around to read [Global poverty in an unequal world](https://ourworldindata.org/higher-poverty-global-line) which presents a deep dive into how we measure poverty and how we could improve it.
 
 ## SQL
 
@@ -23,11 +23,11 @@ I've subscribed to Increment, a magazine published by stripe which usually deep 
 
 Somehow I've read a lot on how we should be developing our data systems, be it for scaling, investment on open-source  or best practices. I leave below some of the most interesting (in my opinion of course):
 
-[Scaling Reporting at Reddit](https://redditblog.com/2021/02/26/scaling-reporting-at-reddit/)
-[the Furure of Business Inteligence is Open Source](https://maximebeauchemin.medium.com/the-future-of-business-intelligence-is-open-source-9b654595773a)
-[DAG Writin Best Practices in Apache Airflow](https://www.astronomer.io/blog/dag-writing-best-practices-in-apache-airflow)
-[The New Rules of Data Quality](https://towardsdatascience.com/the-new-rules-of-data-quality-5e4fdecb9618)
-[Evolving Schemaless into a Distributed SQL Database ](https://eng.uber.com/schemaless-sql-database/)
+- [Scaling Reporting at Reddit](https://redditblog.com/2021/02/26/scaling-reporting-at-reddit/)
+- [the Furure of Business Inteligence is Open Source](https://maximebeauchemin.medium.com/the-future-of-business-intelligence-is-open-source-9b654595773a)
+- [DAG Writin Best Practices in Apache Airflow](https://www.astronomer.io/blog/dag-writing-best-practices-in-apache-airflow)
+- [The New Rules of Data Quality](https://towardsdatascience.com/the-new-rules-of-data-quality-5e4fdecb9618)
+- [Evolving Schemaless into a Distributed SQL Database ](https://eng.uber.com/schemaless-sql-database/)
 
 
 Stay safe and have a nice week!
