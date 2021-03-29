@@ -21,7 +21,7 @@ Cloudfare shows an interesting use of Clickhouse in an operational system for bo
 
 ## SQL
 
-[Taming the Dependency Hell with dbt](https://medium.com/tiqets-tech/taming-the-dependency-hell-with-dbt-2491771a11be) gives a nice example on how DBT improved the management of data systems and show the current challenges of it (including performance when running very heavy ones).
+[Taming the Dependency Hell with dbt](https://medium.com/tiqets-tech/taming-the-dependency-hell-with-dbt-2491771a11be) gives a nice example on how DBT improved the management of data systems and show the current challenges of it (including performance when running very heavy queries).
 
 I've realized that I need to take a deeper look into optimization of data objects like indexes, partitions and sharding. [Explaining Your Postgres Query Performance](https://blog.crunchydata.com/blog/three-easy-things-to-remember-about-postgres-indexes) gives some suscint points on how indexes work and that they require planning to make them useful and to not create bigger issues.
 
