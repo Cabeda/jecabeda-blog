@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-// Import typefaces
-import "typeface-montserrat";
-import "typeface-merriweather";
+// Import fontsource
+import "fontsource-montserrat";
+import "fontsource-merriweather";
 
 import profilePic from "./profile-pic.webp";
 import { rhythm } from "../utils/typography";
