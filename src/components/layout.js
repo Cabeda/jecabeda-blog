@@ -10,7 +10,7 @@ const Row = styled.div`
   justify-content: space-between;
 `;
 
-const TemplateTitle = styled.h3`
+const TemplateTitle = styled.h2`
   font-family: Montserrat, sans-serif;
   margin-top: 0;
   padding-bottom: ${rhythm(1)};
@@ -25,9 +25,7 @@ const LinkStyle = styled.a`
 function Header() {
   return (
     <TemplateTitle>
-      <LinkStyle>
-        <Link to={"/"}>José Cabeda</Link>
-      </LinkStyle>
+      <LinkStyle to={"/"}>José Cabeda</LinkStyle>
     </TemplateTitle>
   );
 }
