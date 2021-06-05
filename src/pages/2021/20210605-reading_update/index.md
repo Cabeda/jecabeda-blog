@@ -15,5 +15,6 @@ I'm going on vacations but before doing so decided to clean my to-read list. Kin
 - [PostgreSQL 14 Beta 1 Released!](https://www.postgresql.org/about/news/postgresql-14-beta-1-released-2213/)
 - [Containers are tents](https://increment.com/containers/containers-vs-vms/)
 - [Analytics is a mess](https://benn.substack.com/p/analytics-is-a-mess)
+- [How Airbnb Standardized Metric Computation at Scale](https://medium.com/airbnb-engineering/airbnb-metric-computation-with-minerva-part-2-9afe6695b486)
 
 Stay safe, stay well :-)
