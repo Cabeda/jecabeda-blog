@@ -16,7 +16,7 @@ const TemplateTitle = styled.h2`
   padding-bottom: ${rhythm(1)};
 `;
 
-const LinkStyle = styled.a`
+const LinkStyle = styled(props => <Link {...props}></Link>)`
   box-shadow: none;
   text-decoration: none;
   color: var(--textNormal);
