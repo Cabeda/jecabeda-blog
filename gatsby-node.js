@@ -1,5 +1,5 @@
-import path from "path";
-import { createFilePath } from "gatsby-source-filesystem";
+const path = require("path");
+const fs = require("gatsby-source-filesystem");
 
 async function createBlogPosts({ graphql, actions }) {
   // 1. Get a template file for this page
@@ -45,13 +45,13 @@ async function createBlogPosts({ graphql, actions }) {
   });
 }
 
-export async function createPages(params) {
+async function createPages(params) {
   await Promise.all([createBlogPosts(params)]);
 }
 
-export function onCreateNode({ node, actions, getNode }) {
+function onCreateNode({ node, actions, getNode }) {
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode });
+    const value = fs.createFilePath({ node, getNode });
     actions.createNodeField({
       name: `slug`,
       node,
@@ -59,3 +59,6 @@ export function onCreateNode({ node, actions, getNode }) {
     });
   }
 }
+
+module.exports.createPages = createPages;
+module.exports.onCreateNode = onCreateNode;
