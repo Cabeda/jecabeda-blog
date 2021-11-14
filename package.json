@@ -74,10 +74,10 @@
     "url": "git+https://github.com/Cabeda/jecabeda-blog.git"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=\"-r esm\" gatsby build",
-    "develop": "cross-env NODE_OPTIONS=\"-r esm\" gatsby develop",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
     "start": "npm run develop",
-    "serve": "cross-env NODE_OPTIONS=\"-r esm\" gatsby serve",
+    "serve": "gatsby serve",
     "clean": "gatsby clean",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
