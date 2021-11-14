@@ -59,7 +59,7 @@
     "prettier": "^2.4.1"
   },
   "resolutions": {
-    "graphql": "^0.16.19",
+    "graphql": "^16.0.1",
     "graphql-compose": "^9.0.4",
     "webpack": "^5.64.0"
   },
