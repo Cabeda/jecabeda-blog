@@ -7,7 +7,7 @@
     "url": "https://github.com/Cabeda/jecabeda-blog/issues"
   },
   "engines": {
-    "node": ">=14.x"
+    "node": "14.x"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.13.3",
