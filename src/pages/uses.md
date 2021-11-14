@@ -1,6 +1,6 @@
 ---
-title: 'Uses'
-date: '2020-10-24'
+title: "Uses"
+date: "2021-11-14"
 ---
 
 List of all my technologies, hardware, etc
@@ -16,10 +16,14 @@ List of all my technologies, hardware, etc
 - Graphics: Nvidia GTX 970
 - Monitor: LG Flatron W2253v
 - Keyboard: Trust 16601-02
+- Chair: [Markus](https://www.ikea.com/pt/pt/p/markus-cadeira-giratoria-vissle-cinz-esc-70261150/)
+- **Sony WH-XB900N** as they have great sound quality and ANC without paying premium
+- **Xiaomi Mi Computer Minotr Light Bar** provides great light and gives a nice mood for working 😎
 
 ## DevTools
 
 - VS Code (theme: Dark+)
+- Intellij (for scala development as metals isn't able to load some projects)
 - Alacritty
 - Oh my ZSH
 - Insomnia
@@ -28,18 +32,19 @@ List of all my technologies, hardware, etc
 
 - Keybase (sensitive info)
 - Slack
-  
+
 ## Browser
 
-- [Personal] Firefox
+- [Personal] Brave (migrate from Firefox as I was seeing too much of a speed diffence on my phone and like to have sync feature between devicess)
 - [Work] Chrome
 
 ## Others
 
-- Bitwarden
-- Notion
+- raycast
+- altTab for a windows like tab switcher
+- Bitwarden as my password manager
 - Spotify
-- Google Drive
+- Google Drive (and google sides, docs and sheets)
 - VLC
 
 ## Configs & scripts
