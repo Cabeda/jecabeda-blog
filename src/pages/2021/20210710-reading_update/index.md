@@ -13,7 +13,7 @@ Below I'm leaving some articles and conferences on python, and leaving a referen
 - [Data Processing on Ray](https://www.youtube.com/watch?v=DNLqvdov_J4&list=PL2Uw4_HvXqvYk1Y5P8kryoyd83L_0Uk5K&index=17)
 - [](https://www.youtube.com/watch?v=EC0CSevbt9k&list=PL2Uw4_HvXqvYk1Y5P8kryoyd83L_0Uk5K&index=19)
 - [Event-driven applications: Apache Kafka and Python](https://www.youtube.com/watch?v=Ltgt0ekso4c&list=PL2Uw4_HvXqvYk1Y5P8kryoyd83L_0Uk5K&index=20)
-- [Python Best Practices for a New Project in 2021](https://mitelman.engineering/blog/python-best-practice/automating-python-best-practices-for-a-new-project/?utm_source=pocket_mylist)
+- [Python Best Practices for a New Project in 2021](https://mitelman.engineering/blog/python-best-practice/automating-python-best-practices-for-a-new-project/)
 - [Trusting Metrics at Pinteres](https://medium.com/pinterest-engineering/trusting-metrics-at-pinterest-ed76307e10a0)
 - [The Rise and Fall of the OLAP Cube](https://www.holistics.io/blog/the-rise-and-fall-of-the-olap-cube/)
 
