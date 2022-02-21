@@ -17,5 +17,3 @@ date: "2022-02-13"
 ## Engineering
 
 - [The Biggest Mistake I See Engineers Make](https://www.thezbook.com/the-biggest-mistake-i-see-engineers-make-2/) - this article comes close to the heart as I tend to make these mistakes. Sure is a good reminder to go through fast iterations instead of falling into waterfall
-
-## Others
