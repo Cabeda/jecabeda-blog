@@ -22,18 +22,6 @@ const LinkStyle = styled((props) => <Link {...props}></Link>)`
   color: var(--textNormal);
 `;
 
-const upPageCount = () => {
-  const pathname = window.location.pathname;
-  const myRequest = new Request(`./api/count?page=${pathname}`);
-  fetch(myRequest).then((response) => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    console.log("Run api");
-    return response.blob();
-  });
-};
-
 function Header() {
   return (
     <TemplateTitle>
@@ -43,7 +31,6 @@ function Header() {
 }
 
 export default function Template({ children }) {
-  upPageCount();
   return (
     <LayoutStyles>
       <Row>
