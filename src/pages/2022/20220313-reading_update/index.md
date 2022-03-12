@@ -11,4 +11,6 @@ date: "2022-03-06"
 
 ## Engineering
 
+- [Python built-in functions to know](https://treyhunner.com/2019/05/python-builtins-worth-learning/) - A very complete guide on the most important python built-ins. In case I return to using python more often I'm planning on reviewing this list again 
+
 ## Others
