@@ -9,7 +9,7 @@ import Bio from "../components/Bio";
 import { rhythm } from "../utils/typography";
 
 const upPageCount = (location) => {
-  const myRequest = new Request(`./api/count?page=${pathname}`);
+  const myRequest = new Request(`./api/count?page=${location}`);
   fetch(myRequest).then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
@@ -23,7 +23,7 @@ export default function BlogPostTemplate(props) {
   const post = props.data.markdownRemark;
   const siteTitle = props.data.site.siteMetadata.title;
   const { previous, next } = props.pageContext;
-  upPageCount(props.location);
+  upPageCount(props.location.pathname);
 
   const DateStyle = styled.p`
     /* ...scale(-1 / 5); */
