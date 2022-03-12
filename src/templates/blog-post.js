@@ -7,23 +7,11 @@ import styled from "styled-components";
 
 import Bio from "../components/Bio";
 import { rhythm } from "../utils/typography";
-import axios from "axios";
-
-const upPageCount = (location) => {
-  axios(`/api/count?page=${location}`).then((response) => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    console.log("Run api");
-    return response.blob();
-  });
-};
 
 export default function BlogPostTemplate(props) {
   const post = props.data.markdownRemark;
   const siteTitle = props.data.site.siteMetadata.title;
   const { previous, next } = props.pageContext;
-  upPageCount(props.location.pathname);
 
   const DateStyle = styled.p`
     /* ...scale(-1 / 5); */
