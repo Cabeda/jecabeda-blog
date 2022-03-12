@@ -9,7 +9,7 @@ import Bio from "../components/Bio";
 import { rhythm } from "../utils/typography";
 
 const upPageCount = (location) => {
-  fetch(`./api/count?page=${location}`).then((response) => {
+  fetch(`/api/count?page=${location}`).then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
