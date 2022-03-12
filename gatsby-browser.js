@@ -1,4 +1,4 @@
-import axios from "axios";
+require("axios")
 
 const upPageCount = (location) => {
   axios(`/api/count?page=${location}`).then((response) => {
