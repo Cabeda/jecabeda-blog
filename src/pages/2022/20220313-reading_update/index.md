@@ -5,6 +5,8 @@ date: "2022-03-13"
 
 ![Photo by allison christine on Unsplash](./rain.jpeg)
 
+This has been a productive week, I've read a lot of articles and hope to start reading the book Database Internals
+
 ## Data Engineering
 
 - [What's new in Iceberg 0.13](https://tabular.io/blog/whats-new-in-iceberg-0.13/) - Iceberg 0.13 has been release and it brings really good SQL commands like write ordered and soft deletes to Spark
