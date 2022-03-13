@@ -21,4 +21,4 @@ date: "2022-03-06"
 - [shot-scraper: automated screenshots for documentation, built on Playwright](https://simonwillison.net/2022/Mar/10/shot-scraper/) - A very interesting tool using playwright to automate screenshots
 - [One Way Smart Developers Make Bad Strategic Decisions](https://earthly.dev/blog/see-state/) - A good article on why sometimes a complicated system might be int this way for a reason
 
-## Others
+Stay safe and have a nice week 🙃
