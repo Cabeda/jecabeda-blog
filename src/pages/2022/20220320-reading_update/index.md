@@ -1,6 +1,6 @@
 ---
 title: "Reading Update"
-date: "2022-03-13"
+date: "2022-03-20"
 ---
 
 ![Photo by Patrick Perkins on Unsplash](./blade_runner.jpeg)
@@ -18,7 +18,5 @@ date: "2022-03-13"
 - [Why I Prefer Makefiles Over package.json Scripts](https://spin.atomicobject.com/2021/03/22/makefiles-vs-package-json-scripts/) - At first I prefered the package.json format but after reading this I have to accept that makefile and other formats like the ones used by gradle and sbt can be more powerful
 - [Which is better: A single Kafka cluster to rule them all, or many?](https://developers.redhat.com/articles/2022/03/10/which-better-single-kafka-cluster-rule-them-all-or-many) - Red hat list of pros and cons of either having a single kafka cluster or multiple ones leaning into having multiple as long as we don't have strict requirements of ordering
 - [Addressing Python Dependency Confusion at Pinterest](https://medium.com/pinterest-engineering/addressing-python-dependency-confusion-at-pinterest-e0a0609c8e9) - Pinterest gives an introduction into dependency confunsion, a mechanism that allows the injection of malware into our applications, and how they deal with it
-
-## Others
 
 Stay safe and Have a nice week :-)
