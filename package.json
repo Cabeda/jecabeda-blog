@@ -1,7 +1,7 @@
 {
   "name": "jecabeda-blog",
   "description": "José Cabeda",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "author": "José Cabeda <jecabeda@gmail.com>",
   "bugs": {
     "url": "https://github.com/Cabeda/jecabeda-blog/issues"
@@ -38,8 +38,8 @@
     "mysql2": "^2.3.3",
     "postcss": "^8.4.12",
     "prismjs": "^1.27.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1",
     "react-typography": "^0.16.20",
@@ -50,16 +50,16 @@
   "devDependencies": {
     "@vercel/node": "^1.14.0",
     "babel-eslint": "^10.1.0",
-    "babel-preset-gatsby": "^2.1.2",
+    "babel-preset-gatsby": "^2.11.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.2.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.27.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
     "esm": "^3.2.25",
-    "prettier": "^2.4.1"
+    "prettier": "^2.6.2"
   },
   "resolutions": {
     "graphql": "^15.4.0",
