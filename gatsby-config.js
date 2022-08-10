@@ -100,7 +100,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Your Site's RSS Feed",
+            title: "Cabeda Blog",
           },
         ],
       },
