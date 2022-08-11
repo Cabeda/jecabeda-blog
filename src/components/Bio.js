@@ -1,34 +1,44 @@
 import React from "react";
-import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
-
-// Import fontsource
-import "fontsource-montserrat";
-import "fontsource-merriweather";
-
-import { rhythm } from "../utils/typography";
-
-const BioStyle = styled.div`
-  position: relative;
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  margin-bottom: ${rhythm(2.5)};
-`;
-
-const Resume = styled.p`
-  margin-left: 1rem;
-  margin-bottom: 0;
-`;
+import { useStaticQuery, graphql } from "gatsby"
 
 export default function Bio() {
+  const data = useStaticQuery(graphql`
+  query BioQuery {
+    site {
+      siteMetadata {
+        author {
+          name
+          summary
+        }
+        social {
+          twitter
+        }
+      }
+    }
+  }
+`)
+
+// Set these values by editing "siteMetadata" in gatsby-config.js
+const author = data.site.siteMetadata?.author
+
   return (
-    <BioStyle>
-        <StaticImage src="./profile-pic.webp" loading="eager" aspectRatio={1/1} imgStyle={{ borderRadius: "50%" }} alt={`José Cabeda`} />
-      <Resume>
-        I'm <strong>José Cabeda</strong>, a data engineer focused on improving
-        data systems and educating on how to use them. I also do a lot of
-        planning and read as much as I can.
-      </Resume>
-    </BioStyle>
+    <div className="bio">
+    <StaticImage
+      className="bio-avatar"
+      layout="fixed"
+      formats={["auto", "webp", "avif"]}
+      src="../images/profile-pic.webp"
+      placeholder="blurred"
+      height={100}
+      quality={95}
+      alt="My awesome picture in Ireland"
+    />
+    {(author?.name && author?.summary) && (
+      <p>
+        I'm <strong>{author?.name}</strong>, {author.summary}
+      </p>
+    )}
+  </div>
   );
 }

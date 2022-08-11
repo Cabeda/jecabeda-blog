@@ -1,4 +1,12 @@
-const axios = require("axios");
+import axios from "axios";
+
+// custom typefaces
+import "typeface-montserrat"
+import "typeface-merriweather"
+
+// custom CSS styles
+import "./src/normalize.css"
+import "./src/style.css"
 
 const upPageCount = (location) => {
   axios(`/api/count?page=${location}`)
@@ -14,6 +22,6 @@ const upPageCount = (location) => {
 };
 
 // Logs when the client route changes
-exports.onRouteUpdate = ({ location, prevLocation }) => {
+export function onRouteUpdate({ location, prevLocation }) {
   upPageCount(location.pathname);
-};
+}
