@@ -1,10 +1,20 @@
 module.exports = {
   siteMetadata: {
     title: "José Cabeda",
-    author: "José cabeda",
-    description: "A personal corner for a data engineer",
+    keywords:"webdev, gatsbyjs, reactjs, frontend, graphql, design, data, blog",
+    author: {
+      name: `José Cabeda`,
+      summary: `a data engineer focused on improving
+      data systems and educating on how to use them. I also do a lot of
+      planning and read as much as I can.`,
+    },
+    description: "A personal blog about a data engineer focused on data and stories",
     siteUrl: "https://cabeda.dev",
+    social: {
+      twitter: `cabeda`,
+    },
   },
+  graphqlTypegen: true,
   pathPrefix: "/jecabeda-blog",
   plugins: [
     {
@@ -27,6 +37,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -34,7 +51,13 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 630,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
             },
           },
           {
@@ -106,12 +129,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: "gatsby-plugin-typography",
-      options: {
-        pathToConfigModule: "src/utils/typography",
-      },
-    },
   ],
 };

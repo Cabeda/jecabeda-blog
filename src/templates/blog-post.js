@@ -1,27 +1,25 @@
 import React from "react";
-import Helmet from "react-helmet";
 import Link from "gatsby-link";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import styled from "styled-components";
 
 import Bio from "../components/Bio";
-import { rhythm } from "../utils/typography";
 
-export default function BlogPostTemplate(props) {
-  const post = props.data.markdownRemark;
-  const siteTitle = props.data.site.siteMetadata.title;
-  const { previous, next } = props.pageContext;
+export default function BlogPostTemplate({
+  data: { previous, next, site, markdownRemark: post },
+  location,
+}) {
+  const siteTitle = site.siteMetadata?.title || `Title`
 
   const DateStyle = styled.p`
-    /* ...scale(-1 / 5); */
     display: block;
-    margin-bottom: ${rhythm(1)};
-    margin-top: ${rhythm(-1)};
+    margin-bottom: 0;
+    margin-top: 0;
   `;
 
   const BreakStyle = styled.hr`
-    margin-bottom: ${rhythm(1)};
+    margin-bottom: 0;
   `;
 
   const PrevNext = styled.ul`
@@ -33,9 +31,8 @@ export default function BlogPostTemplate(props) {
   `;
 
   return (
-    <Layout location={props.location}>
+    <Layout location={location} title={siteTitle}>
       <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <h1>{post.frontmatter.title}</h1>
         <DateStyle>{post.frontmatter.date}</DateStyle>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -69,7 +66,9 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
+        author {
+          name
+        }
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
