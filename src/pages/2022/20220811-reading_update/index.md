@@ -22,12 +22,12 @@ Finnally I've added a single API endpoint to this blog to check how many visitor
 
 ### Data Engineering
 
-[Ep 29: Making Sense of the Last 2 years in Data (w/ Jennifer Li + Matt Bornstein of a16z)](https://roundup.getdbt.com/p/ep-29-making-sense-of-the-last-2)
-[Near Real-Time Ingestion For Trino](https://www.starburst.io/blog/near-real-time-ingestion-for-trino/)
-[Inconsistent thoughts on database consistency](https://alexdebrie.com/posts/database-consistency/)
+- [Ep 29: Making Sense of the Last 2 years in Data (w/ Jennifer Li + Matt Bornstein of a16z)](https://roundup.getdbt.com/p/ep-29-making-sense-of-the-last-2)
+- [Near Real-Time Ingestion For Trino](https://www.starburst.io/blog/near-real-time-ingestion-for-trino/)
+- [Inconsistent thoughts on database consistency](https://alexdebrie.com/posts/database-consistency/)
 
 ### Engineering
 
-[Why your daily stand-ups don't work and how to fix them](https://lucasfcosta.com/2022/08/07/how-to-improve-daily-standups.html)
+- [Why your daily stand-ups don't work and how to fix them](https://lucasfcosta.com/2022/08/07/how-to-improve-daily-standups.html)
 
-[Incident Management](https://medium.com/airbnb-engineering/incident-management-ae863dc5d47f)
+- [Incident Management](https://medium.com/airbnb-engineering/incident-management-ae863dc5d47f)
