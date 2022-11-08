@@ -3,9 +3,10 @@ import styled from 'styled-components'
 import {
   FaLinkedin,
   FaGithub,
-  FaStackOverflow,
   FaEnvelope,
   FaAddressCard,
+  FaMastodon,
+  FaTwitter
 } from 'react-icons/fa';
 
 const Icon = styled.div`
@@ -45,14 +46,17 @@ box-shadow: none;
 export default function Links() {
     return (
       <Icon>
-        <Link href="https://stackoverflow.com/users/3637832/jecabeda">
-          <FaStackOverflow />
-        </Link>
         <Link href="https://www.linkedin.com/in/jecabeda/">
           <FaLinkedin />
         </Link>
         <Link href="https://github.com/Cabeda">
           <FaGithub />
+        </Link>
+        <Link href="https://mastodon.social/@jecabeda">
+          <FaMastodon />
+        </Link>
+        <Link href="https://twitter.com/jecabeda">
+          <FaTwitter />
         </Link>
         <Link href="mailto:jecabeda@gmail.com">
           <FaEnvelope />
