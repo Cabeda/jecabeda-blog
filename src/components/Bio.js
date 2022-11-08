@@ -1,6 +1,13 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { useStaticQuery, graphql } from "gatsby"
+import styled from 'styled-components'
+
+const BioStyle = styled.div`
+display: grid;
+grid-template-columns: auto auto
+// max-height:2rem
+`;
 
 export default function Bio() {
   const data = useStaticQuery(graphql`
@@ -23,22 +30,23 @@ export default function Bio() {
 const author = data.site.siteMetadata?.author
 
   return (
-    <div className="bio">
+    <BioStyle className="bio">
     <StaticImage
       className="bio-avatar"
       layout="fixed"
       formats={["auto", "webp", "avif"]}
-      src="../images/profile-pic.webp"
+      src="../images/profile_2022.avif"
       placeholder="blurred"
+      width={100}
       height={100}
-      quality={95}
-      alt="My awesome picture in Ireland"
+      quality={100}
+      alt="Sevilha 2022"
     />
     {(author?.name && author?.summary) && (
       <p>
         I'm <strong>{author?.name}</strong>, {author.summary}
       </p>
     )}
-  </div>
+  </BioStyle>
   );
 }
