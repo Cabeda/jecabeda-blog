@@ -52,7 +52,7 @@ export default function Links() {
         <Link href="https://github.com/Cabeda">
           <FaGithub />
         </Link>
-        <Link href="https://mastodon.social/@jecabeda">
+        <Link rel="me" href="https://mastodon.social/@jecabeda">
           <FaMastodon />
         </Link>
         <Link href="https://twitter.com/jecabeda">
