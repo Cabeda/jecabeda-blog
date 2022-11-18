@@ -7,8 +7,11 @@ import "typeface-merriweather"
 // custom CSS styles
 import "./src/normalize.css"
 import "./src/style.css"
+import "prism-themes/themes/prism-vsc-dark-plus.css"
+import "prismjs/plugins/line-numbers/prism-line-numbers.css"
+import "prismjs/plugins/command-line/prism-command-line.css"
 
-const upPageCount = (location) => {
+function upPageCount(location) {
   axios(`/api/count?page=${location}`)
     .then((response) => {
       if (!response.ok) {
@@ -19,7 +22,7 @@ const upPageCount = (location) => {
     .catch((error) => {
       console.log("Count Error: ", error);
     });
-};
+}
 
 // Logs when the client route changes
 export function onRouteUpdate({ location, prevLocation }) {

@@ -1,14 +1,16 @@
 module.exports = {
   siteMetadata: {
     title: "José Cabeda",
-    keywords:"webdev, gatsbyjs, reactjs, frontend, graphql, design, data, blog",
+    keywords:
+      "webdev, gatsbyjs, reactjs, frontend, graphql, design, data, blog",
     author: {
       name: `José Cabeda`,
       summary: `a data engineer focused on improving
       data systems and educating on how to use them. I also do a lot of
       planning and read as much as I can.`,
     },
-    description: "A personal blog about a data engineer focused on data and stories",
+    description:
+      "A personal blog about a data engineer focused on data and stories",
     siteUrl: "https://cabeda.dev",
     social: {
       twitter: `cabeda`,
@@ -46,6 +48,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
+        gfm: true,
         plugins: [
           `gatsby-plugin-styled-components`,
           {
@@ -93,15 +96,15 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
+              return allMarkdownRemark.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   custom_elements: [{ "content:encoded": edge.node.html }],
-                })
-              })
+                });
+              });
             },
             query: `
               {
