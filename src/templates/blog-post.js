@@ -10,7 +10,13 @@ export default function BlogPostTemplate({
   data: { previous, next, site, markdownRemark: post },
   location,
 }) {
-  const siteTitle = site.siteMetadata?.title || `Title`
+  const siteTitle = site.siteMetadata?.title || `Title`;
+
+  const Row = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  `;
 
   const DateStyle = styled.p`
     display: block;
@@ -34,8 +40,10 @@ export default function BlogPostTemplate({
     <Layout location={location} title={siteTitle}>
       <div>
         <h1>{post.frontmatter.title}</h1>
-        <DateStyle>{post.frontmatter.date}</DateStyle>
-        <DateStyle>{post.timeToRead} minutes to read</DateStyle>
+        <Row>
+          <DateStyle>{post.frontmatter.date}</DateStyle>
+          <DateStyle>{post.timeToRead} minutes to read</DateStyle>
+        </Row>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <BreakStyle />
         <Bio />
