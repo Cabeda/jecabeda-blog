@@ -35,6 +35,7 @@ export default function BlogPostTemplate({
       <div>
         <h1>{post.frontmatter.title}</h1>
         <DateStyle>{post.frontmatter.date}</DateStyle>
+        <DateStyle>{post.timeToRead} minutes to read</DateStyle>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <BreakStyle />
         <Bio />
@@ -74,6 +75,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
