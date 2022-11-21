@@ -9,7 +9,7 @@ For the last couple of years a new database system, DuckDB, has risen in popular
 
 ## Duck what?
 
-So what is DuckDB? If we go to their [page](https://duckdb.org/) we get that it's _"an in-process SQL OLAP database management system"_. In other words, this means that we can interact and analyze data in different environments by calling an executable file on a shell or by installing a Python package. For analysis that can reside on a single computer, it states to be very performant, and with the addition of built-in tools to read from CSV, Parquet, or even [postgres tables](https://duckdb.org/docs/extensions/postgres_scanner.html), it's turning into the goto tool for data analysis, replacing the need for Python/R, or a somewhat painful process of bootstrapping a database. So, let's put it to the test!
+So what is DuckDB? If we go to their [page](https://duckdb.org/) we get that it's _"an in-process SQL OLAP database management system"_. In other words, this means that we can interact and analyze data in different environments by calling an executable file on a shell or by installing a Python package. For analysis that can reside on a single computer, it states to be very performant and, with the addition of built-in tools to read from CSV, Parquet, or even [postgres tables](https://duckdb.org/docs/extensions/postgres_scanner.html), it's turning into the goto tool for data analysis, replacing the need for Python/R, or a somewhat painful process of bootstrapping a database. So, let's put it to the test!
 
 > **Note**: Another great feature I'd like to add but we won't be testing in this article is the easiness of importing and exporting pandas dataframes, one of the features making it so popular in the Python community. With this said, let's give it a try!
 
@@ -31,7 +31,7 @@ For this test, I'll take the opportunity and analyze the schedule of my local pu
 
 ![](images/2022-11-17-17-14-32.png)
 
-We proceed to transfer it by clicking on the transfer button or you can fun the following commands:
+We proceed to transfer it by clicking on the transfer button or you can run the following commands:
 
 ```shell{numberLines:true}
 wget https://opendata.porto.digital/dataset/5275c986-592c-43f5-8f87-aabbd4e4f3a4/resource/1f845744-1962-4108-a20c-ac3357d0957b/download/gtfs-stcp.zip
@@ -55,7 +55,7 @@ Although they are txt files, after opening them we can see that they follow a CS
 
 ![](images/2022-11-17-17-30-59.png)
 
-This is a nice feature but we don't want to import the files each time we run a query. So the next step is to create a table for each file:
+This is a nice feature but we don't want to import the files each time we run a query. So, the next step is to create a table for each file:
 
 ```sql{numberLines: true}
 create table routes as select * from read_csv_auto('routes.txt');
@@ -83,26 +83,26 @@ So, for us to advance in our test we'll execute `.open main.duckdb`. This comman
 
 This reminds me that if you run `show tables` again, you'll see that the tables you created don't exist anymore 😅. This is because up until we run `.open`, we were storing everything in memory. You need to run the commands above again and from this point one, everytime you close the shell you can open the database by running `duckdb` preceded by the name of the file.
 
-Simple and clean don't you think?
+Simple and clean, don't you think?
 
 ## What can we do with ducdDB?
 
 With the steps above, we can proceed to analyze our dataset. For this test, I came up with 2 questions:
 
-1. How many routes do we have? And the number of stops per route?
+1. How many routes do we have? And stops per route?
 2. What is the frequency of the buses?
 
 To answer these we should first check the schema of our tables (for this article I draw this one manually).
 
 ![Schema](images/2022-11-21-16-31-28.png)
 
-> How many routes do we have? And the number of stops per route?
+> How many routes do we have? And stops per route?
 
 For this first question, we can check the table routes with a select statement.
 
 ![select * routes](images/2022-11-21-12-09-15.png)
 
-The first column is named a route_id which, if unique, will correctly points us to how many lines we have. For that we run both queries:
+The first column is named a route_id which, if unique, will correctly point us to how many lines we have. For that we run both queries:
 
 ```sql{numberLines:true}
 select count(*) from routes;
@@ -110,7 +110,7 @@ select count(*) from routes;
 select count(distinct route_id) from routes;
 ```
 
-Both return 73 so we can safely say in Porto there's 73 routes. But how many stops do we have per line?
+Both return 73 so we can safely say that in Porto there are 73 routes. But how many stops do we have per line?
 
 ```sql{numberLines: true}
 create table route_stops as
@@ -136,7 +136,7 @@ order by total desc;
 -- Linted with sqlfluff
 ```
 
-We get now a nice table with the results. We now can run some queries and extract some answers like the fact that the average number of stops is of 70 and that it can go as little as 21 (routes [920](https://www.stcp.pt/pt/viajar/linhas/?linha=920) and [910](https://www.stcp.pt/pt/viajar/linhas/?linha=910)) to 121 (routes [508](https://www.stcp.pt/pt/viajar/linhas/?linha=508) and [603](https://www.stcp.pt/pt/viajar/linhas/?linha=603)).
+Now we get a nice table with the results. Then we can run some queries and extract some answers like the fact that the average number of stops are 70 and that it can go as little as 21 (routes [920](https://www.stcp.pt/pt/viajar/linhas/?linha=920) and [910](https://www.stcp.pt/pt/viajar/linhas/?linha=910)) to 121 (routes [508](https://www.stcp.pt/pt/viajar/linhas/?linha=508) and [603](https://www.stcp.pt/pt/viajar/linhas/?linha=603)).
 
 ```sql{numberLines:true}
 select avg(total) from route_stops;
