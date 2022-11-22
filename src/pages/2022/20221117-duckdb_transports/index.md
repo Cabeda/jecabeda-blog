@@ -9,7 +9,11 @@ For the last couple of years a new database system, DuckDB, has risen in popular
 
 ## Duck what?
 
-So what is DuckDB? If we go to their [page](https://duckdb.org/) we're presented with "DuckDB is an in-process SQL OLAP database management system". In other words, this means that we can interact and analyze data in different environments by calling an executable file on a shell or by installing a Python package. For analysis that can reside on a single computer, it states to be very performant and, with the addition of built-in tools to read from CSV, Parquet, or even [postgres tables](https://duckdb.org/docs/extensions/postgres_scanner.html), it's turning into the goto tool for data analysis, replacing the need for Python/R, or a somewhat painful process of bootstrapping a database. So, let's put it to the test!
+So what is DuckDB? If we go to their [page](https://duckdb.org/) we're presented with:
+
+> "DuckDB is an in-process SQL OLAP database management system".
+
+In other words, this means that we can interact and analyze data in different environments by calling an executable file on a shell or by installing a Python package. For analysis that can reside on a single computer, it states to be very performant and, with the addition of built-in tools to read from CSV, Parquet, or even [postgres tables](https://duckdb.org/docs/extensions/postgres_scanner.html), it's turning into the goto tool for data analysis, replacing the need for Python/R, or a somewhat painful process of bootstrapping a database. So, let's put it to the test!
 
 > **Note**: Another great feature I'd like to add but we won't be testing in this article is the easiness of importing and exporting pandas dataframes, one of the features making it so popular in the Python community. With this said, let's give it a try!
 
