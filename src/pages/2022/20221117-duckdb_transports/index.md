@@ -89,7 +89,7 @@ This reminds me that if you run `show tables` again, you'll see that the tables 
 
 Simple and clean, don't you think?
 
-## What can we do with duckDB?
+## What can we do with DuckDB?
 
 With the steps above, we can proceed to analyze our dataset. For this test, I came up with 2 questions:
 
@@ -190,7 +190,7 @@ Now we get something more interesting to analyze. [Route 205](https://www.stcp.p
 
 ## Conclusion
 
-In this post, I've tried to show how we could use Duckdb for local analysis with only some knowledge of SQL. It can empower analysts and data engineers as we can focus on the problem at hand as SQL is a declarative language instead of an imperative one. There are many other features I'm hoping to test and in the future, I'll try to show features like:
+In this post, I've tried to show how we could use DuckDB for local analysis with only some knowledge of SQL. It can empower analysts and data engineers as we can focus on the problem at hand as SQL is a declarative language instead of an imperative one. There are many other features I'm hoping to test and in the future, I'll try to show features like:
 
 - Employing DuckDB on a jupyter notebook
 - Read from an S3 and a postgres instance
