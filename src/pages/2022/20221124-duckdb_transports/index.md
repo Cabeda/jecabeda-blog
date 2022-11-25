@@ -1,6 +1,6 @@
 ---
 title: "DuckDB VS Porto buses - A small case for a new OLAP engine"
-date: "2022-11-24"
+date: "2022-11-24" 
 ---
 
 ![Beautiful duck in a lake](./images/duck.jpg)
