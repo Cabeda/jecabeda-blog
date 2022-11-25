@@ -1,6 +1,6 @@
 ---
 title: [PT] Código aberto
-date: "2022-11-2023" 
+date: "2022-11-23" 
 ---
 
 No momento que escrevo este texto estamos a passar por uma pequena revolução à qual temos tudo a ganhar se entrarmos na onda. Há decadas que somos evangelizados sobre a digitalização mas a verdade é que para muitos de nós parece que a única grande vantagem é na redução do papel e porque se torna possivel de receber emails ao invés de nos termos de descolar. Mas a verdade é que, como Portugueses e tão ou mais importante, como Europeus, a verdadeira revolução nos está a passar ao lado. A verdade é que até ao momento o nosso aliado os Estados Unidos lideraram no desenvolvimento de sistemas informáticos e isso se reflete nos programas que utilizamos no dia-a-dia. Atualmente somos ensinados na escola a escrever com o Microsoft Word, o acesso à internet se não é pelo velhinho Internet Explorer é efetuado pelo Google Chrome e não descuramos falar com os nossos amigos via Whatsapp. Tudo isto a correr no Windows, tudo isto com a label de "made in USA", tudo isto a forçar os nossos dados a passarem para o outro lado do Atlântico e o software que utilizamos funciona como uma caixa negra. No entanto será esta uma situação ideal?
