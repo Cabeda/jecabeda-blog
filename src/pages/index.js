@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "gatsby-link";
+import { Link } from "gatsby-link";
 import { graphql } from "gatsby";
 
 import Template from "../components/layout";
@@ -47,7 +47,9 @@ export default function BlogIndex({ location, data }) {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date} | {node.timeToRead} minutes to read</small>
+              <small>
+                {node.frontmatter.date} | {node.timeToRead} minutes to read
+              </small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           );
