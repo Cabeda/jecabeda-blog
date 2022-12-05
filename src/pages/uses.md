@@ -1,6 +1,6 @@
 ---
 title: "Uses"
-date: "2022-08-17"
+date: "2022-12-05"
 ---
 
 List of all my technologies, hardware, etc
@@ -11,7 +11,7 @@ List of all my technologies, hardware, etc
 - Personal computer:
   - Graphics: Nvidia GTX 970
   - Monitor: HUAWEI MateView GT 34
-  - Keyboard: Trust 16601-02
+  - Keyboard: Keychron K6
   - Chair: [Markus](https://www.ikea.com/pt/pt/p/markus-cadeira-giratoria-vissle-cinz-esc-70261150/)
   - **Sony WH-XB900N** as they have great sound quality and ANC without paying premium
 - **Xiaomi Mi Computer Minotr Light Bar** provides great light and gives a nice mood for working 😎
