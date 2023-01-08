@@ -1,6 +1,6 @@
 ---
 title: "Talk, Christmas and next year | Readings"
-date: "2022-01-02"
+date: "2023-01-02"
 ---
 
 ![Photo by Hiroko Yoshii on Unsplash](./reef.avif)
