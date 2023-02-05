@@ -1,4 +1,10 @@
-module.exports = {
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const config = {
   siteMetadata: {
     title: "José Cabeda",
     keywords:
@@ -72,7 +78,7 @@ module.exports = {
           {
             resolve: "gatsby-remark-prismjs",
             options: {
-              inlineCodeMarker: '>',
+              inlineCodeMarker: ">",
               showLineNumbers: true,
             },
           },
@@ -140,3 +146,5 @@ module.exports = {
     `gatsby-plugin-offline`,
   ],
 };
+
+export default config;

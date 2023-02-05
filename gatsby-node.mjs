@@ -1,9 +1,9 @@
-const path = require("path");
-const fs = require("gatsby-source-filesystem");
+import { resolve } from "path";
+import { createFilePath } from "gatsby-source-filesystem";
 
 async function createBlogPosts({ graphql, actions }) {
   // 1. Get a template file for this page
-  const blogTemplate = path.resolve("./src/templates/blog-post.js");
+  const blogTemplate = resolve("./src/templates/blog-post.js");
 
   // 2. Query all posts
   const { data } = await graphql(`
@@ -45,13 +45,13 @@ async function createBlogPosts({ graphql, actions }) {
   });
 }
 
-async function createPages(params) {
+export async function createPages(params) {
   await Promise.all([createBlogPosts(params)]);
 }
 
-function onCreateNode({ node, actions, getNode }) {
+export function onCreateNode({ node, actions, getNode }) {
   if (node.internal.type === `MarkdownRemark`) {
-    const value = fs.createFilePath({ node, getNode });
+    const value = createFilePath({ node, getNode });
     actions.createNodeField({
       name: `slug`,
       node,
@@ -59,6 +59,3 @@ function onCreateNode({ node, actions, getNode }) {
     });
   }
 }
-
-module.exports.createPages = createPages;
-module.exports.onCreateNode = onCreateNode;
