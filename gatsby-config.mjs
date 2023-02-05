@@ -23,7 +23,7 @@ const config = {
     },
   },
   graphqlTypegen: true,
-  pathPrefix: "/jecabeda-blog",
+  pathPrefix: "/",
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
