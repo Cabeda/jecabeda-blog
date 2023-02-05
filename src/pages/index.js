@@ -11,6 +11,7 @@ function Head({ title, description }) {
   return (
     <>
       <title>{title}</title>
+      <html lang="en"></html>
       <meta name="description" content={description} />
       <link rel="icon" type="image/ico" href={icon32} />
     </>
@@ -66,7 +67,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       edges {
         node {
           excerpt
