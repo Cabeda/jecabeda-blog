@@ -1,5 +1,5 @@
 ---
-title: "Vist to Lisbon | Readings"
+title: "Visit to Lisbon | Readings"
 date: "2023-01-30"
 ---
 
