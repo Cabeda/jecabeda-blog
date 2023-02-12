@@ -36,7 +36,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
-    "start": "^5.1.0",
     "styled-components": "^5.3.6",
     "typeface-merriweather": "^1.1.13",
     "typeface-montserrat": "^1.1.13"
@@ -44,6 +43,7 @@
   "devDependencies": {
     "@vercel/node": "^2.9.0",
     "cross-env": "^7.0.3",
+    "start": "^5.1.0",
     "prettier": "^2.8.3"
   },
   "homepage": "https://github.com/Cabeda/jecabeda-blog",
