@@ -12,7 +12,6 @@ This is a very hard problem and one which I think makes data engineering relevan
 ## Readings of the week
 
 - [Orchestration isn’t going anywhere - by Nick Schrock](https://stkbailey.substack.com/p/orchestration-isnt-going-anywhere)
-- [The next big step forwards for analytics engineering](https://www.getdbt.com/blog/analytics-engineering-next-step-forwards/)
 - [Hugging Face Presents HuggingChat, Open Source Alternative to ChatGPT](https://www.infoq.com/news/2023/04/hugging-chat-open-source/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 - [Exciting SQLite Improvements Since 2020](https://blog.airsequel.com/exciting-sqlite-improvements-since-2020/)
 - [Why you should teach at a Community College | Timo Zander](https://timozander.de/blog/why-you-should-teach/)

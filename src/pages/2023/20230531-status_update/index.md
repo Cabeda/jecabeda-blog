@@ -17,7 +17,6 @@ So, I'll be revisiting my idea of getting back into conferences and meetups. Doi
 - [Exciting SQLite Improvements Since 2020](https://blog.airsequel.com/exciting-sqlite-improvements-since-2020/)
 - [Why you should teach at a Community College | Timo Zander](https://timozander.de/blog/why-you-should-teach/)
 - [CLI tricks every developer should know | The GitHub Blog](https://github.blog/2023-04-26-cli-tricks-every-developer-should-know/)
-- [The next big step forwards for analytics engineering](https://www.getdbt.com/blog/analytics-engineering-next-step-forwards/)
 - [What’s the point of tech conferences? – Chelsea Troy](https://chelseatroy.com/2023/04/21/whats-the-point-of-tech-conferences/)
 - [Scaling up the Prime Video audio/video monitoring service and reducing costs by 90% - Prime Video Tech](https://www.primevideotech.com/video-streaming/scaling-up-the-prime-video-audio-video-monitoring-service-and-reducing-costs-by-90)
 - [Read Every Single Error | Pulumi Blog](https://www.pulumi.com/blog/reducing-our-error-rate/)
