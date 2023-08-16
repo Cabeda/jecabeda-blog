@@ -7,23 +7,20 @@ async function createBlogPosts({ graphql, actions }) {
 
   // 2. Query all posts
   const { data } = await graphql(`
-    query {
-      allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
-        limit: 1000
-      ) {
-        edges {
-          node {
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-            }
+  {
+    allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 1000) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
           }
         }
       }
     }
+  }
   `);
 
   const posts = data.allMarkdownRemark.edges;
