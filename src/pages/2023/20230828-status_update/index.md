@@ -5,7 +5,7 @@ date: "2023-08-28"
 
 ![https://unsplash.com/photos/4CwxnXWPDMQ](./pancake.avif)
 
-I would like to keep my interest in actually finishing the Spark book. However, I also got an idea to set up a bot to gather real-timee data on Porto's bus locations and compare it to the schedule. This would allow to actually to analyze some hypotheses like:
+I would like to keep my interest in actually finishing the Spark book. However, I also got an idea to set up a bot to gather real-time data on Porto's bus locations and compare it to the schedule. This would allow to actually to analyze some hypotheses like:
     1. Buses that arrive early and don't wait
     2. Suppressed buses (they just vanish?)
     3. Understand where buses take longer and where an optimization of the traffic would improve the timings
