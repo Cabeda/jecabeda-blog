@@ -4,6 +4,7 @@ import { createFilePath } from "gatsby-source-filesystem";
 async function createBlogPosts({ graphql, actions }) {
   // 1. Get a template file for this page
   const blogTemplate = resolve("./src/templates/blog-post.js");
+  const tagTemplate = resolve("./src/templates/tag.js");
 
   // 2. Query all posts
   const { data } = await graphql(`
@@ -16,6 +17,7 @@ async function createBlogPosts({ graphql, actions }) {
           }
           frontmatter {
             title
+            tags
           }
         }
       }
@@ -37,6 +39,19 @@ async function createBlogPosts({ graphql, actions }) {
         slug: post.node.fields.slug,
         previous,
         next,
+      },
+    });
+
+  });
+
+  const tags = [... new Set(posts.map((node) => node.node.frontmatter.tags).flat().filter(tag => tag !== null))];
+
+  tags.forEach((tag) => {
+    actions.createPage({
+      path: `/tags/${tag}`,
+      component: tagTemplate,
+      context: {
+        tag,
       },
     });
   });

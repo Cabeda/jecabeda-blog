@@ -30,34 +30,8 @@ export default function BlogIndex({ location, data }) {
   return (
     <Template location={location} title={siteTitle}>
       <div>
-        <Head
-          title={siteTitle}
-          description={description}
-          keywords={keywords}
-          icon32={icon32}
-        ></Head>
-        <Bio />
-        <Links />
-        <div style={{ display: "flex", flexWrap: "wrap" }}>
-          {tags.map((tag) => (
-            <Link
-              key={tag}
-              to={`/tags/${tag}`}
-              style={{
-                margin: "0.5rem",
-                padding: "0.25rem 0.5rem",
-                borderRadius: "0.25rem",
-                background: "#f0f0f0",
-                textDecoration: "none",
-              }}
-            >
-              {tag}
-            </Link>
-          ))}
-        </div>
         {posts.map(({ node }) => {
           const title = node?.frontmatter?.title || node?.fields?.slug;
-          const postTags = node.frontmatter.tags || [];
           return (
             <div key={node.fields.slug}>
               <h3
@@ -70,7 +44,7 @@ export default function BlogIndex({ location, data }) {
                 </Link>
               </h3>
               <small>
-                {node.frontmatter.date} | {node.timeToRead} minutes to read | {postTags.join(" ")}
+                {node.frontmatter.date} | {node.timeToRead} minutes to read
               </small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
