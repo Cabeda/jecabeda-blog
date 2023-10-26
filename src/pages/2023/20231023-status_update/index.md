@@ -1,6 +1,8 @@
 ---
 title: "Lambdas and runs | Readings"
 date: "2023-10-23"
+tags: 
+    - newsletter
 ---
 
 ![Photo of Marquês's church, Porto](./marques.avif)

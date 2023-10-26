@@ -1436,6 +1436,7 @@ type MarkdownRemarkFilterListInput = {
 
 type MarkdownRemarkFrontmatter = {
   readonly date: Maybe<Scalars['Date']>;
+  readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly title: Maybe<Scalars['String']>;
   readonly type: Maybe<Scalars['String']>;
 };
@@ -1450,18 +1451,21 @@ type MarkdownRemarkFrontmatter_dateArgs = {
 
 type MarkdownRemarkFrontmatterFieldSelector = {
   readonly date: InputMaybe<FieldSelectorEnum>;
+  readonly tags: InputMaybe<FieldSelectorEnum>;
   readonly title: InputMaybe<FieldSelectorEnum>;
   readonly type: InputMaybe<FieldSelectorEnum>;
 };
 
 type MarkdownRemarkFrontmatterFilterInput = {
   readonly date: InputMaybe<DateQueryOperatorInput>;
+  readonly tags: InputMaybe<StringQueryOperatorInput>;
   readonly title: InputMaybe<StringQueryOperatorInput>;
   readonly type: InputMaybe<StringQueryOperatorInput>;
 };
 
 type MarkdownRemarkFrontmatterSortInput = {
   readonly date: InputMaybe<SortOrderEnum>;
+  readonly tags: InputMaybe<SortOrderEnum>;
   readonly title: InputMaybe<SortOrderEnum>;
   readonly type: InputMaybe<SortOrderEnum>;
 };
@@ -2752,7 +2756,7 @@ type BlogPostBySlugQueryVariables = Exact<{
 }>;
 
 
-type BlogPostBySlugQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null, readonly author: { readonly name: string | null } | null } | null } | null, readonly markdownRemark: { readonly id: string, readonly html: string | null, readonly timeToRead: number | null, readonly frontmatter: { readonly title: string | null, readonly date: string | null } | null } | null };
+type BlogPostBySlugQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null, readonly author: { readonly name: string | null } | null } | null } | null, readonly markdownRemark: { readonly id: string, readonly html: string | null, readonly timeToRead: number | null, readonly frontmatter: { readonly title: string | null, readonly date: string | null, readonly tags: ReadonlyArray<string | null> | null } | null } | null };
 
 type GatsbyImageSharpFixedFragment = { readonly base64: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string };
 

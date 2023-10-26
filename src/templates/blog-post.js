@@ -12,6 +12,8 @@ export default function BlogPostTemplate({
 }) {
   const siteTitle = site.siteMetadata?.title || `Title`;
 
+  console.log(post);
+
   const Row = styled.div`
     display: flex;
     width: 100%;
@@ -36,6 +38,18 @@ export default function BlogPostTemplate({
     padding: 0;
   `;
 
+  // Colored tags 
+  const TagStyle = styled.p`
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 1rem;
+    color: #fff;
+    background-color: #000;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  `;
+
   return (
     <Layout location={location} title={siteTitle}>
       <div>
@@ -44,6 +58,19 @@ export default function BlogPostTemplate({
           <DateStyle>{post.frontmatter.date}</DateStyle>
           <DateStyle>{post.timeToRead} minutes to read</DateStyle>
         </Row>
+        {post.frontmatter?.tags &&
+          <div style={{ marginBottom: "1rem" }} >
+            {post.frontmatter?.tags.map((tag) => (
+              <Link
+                key={tag}
+                to={`/tags/${tag}`}
+                style={{ textDecoration: "none" }}
+              >
+                <TagStyle>#{tag}</TagStyle>
+              </Link>
+            ))}
+          </div>
+        }
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <BreakStyle />
         <Bio />
@@ -87,6 +114,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "DD MMMM YYYY")
+        tags
       }
     }
   }
