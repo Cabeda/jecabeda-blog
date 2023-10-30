@@ -5,6 +5,8 @@ tags:
     - newsletter
 ---
 
+![https://unsplash.com/photos/brown-seeds-rh04bwPZDQo](./chestnut.avif)
+
 ## Web Dev
 
 Progress: 10%
