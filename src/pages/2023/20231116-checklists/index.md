@@ -4,6 +4,7 @@ date: "2023-11-21"
 tags: 
     - development
     - agile
+    - checklists
 ---
 
 ![https://unsplash.com/photos/person-writing-bucket-list-on-book-RLw-UC03Gwc](./checklist.avif)
