@@ -1,25 +1,32 @@
 ---
-title: "Power of checklists"
-date: "2023-11-16"
+title: "Checklists"
+date: "2023-11-20"
 tags: 
     - development
     - agile
 ---
 
-So, I've been one to be methodic on my practice and I truly thing automation in software engineering is one of the secret powers of the industry. Taking inspiration from an article I read many years ago, I find that for any given repeating task this is the expected lifecycle:
+![https://unsplash.com/photos/person-writing-bucket-list-on-book-RLw-UC03Gwc](./checklist.avif)
+
+> This document will be a live document where I reflect and update on my most current view
+
+So, I've been one to be methodic on my practice and I truly thing automation in software engineering is one of the secret powers of the industry. Taking inspiration from an article I read [3 years ago](https://blog.acolyer.org/2020/01/08/ironies-of-automation/), I find that for any given repeating task this is the expected lifecycle:
 
 1. Document the process
 2. Improve the documents on each iteration
 3. Automate small bits of the process with scripts
 4. Automate the entire process/Deprecate the process
 
-Looking back at this I see two kinds of jobs that I don't see being automated that much and that don't often have very good documentation. Development and peer review. And as I get bored very quickly, I think I should be taking a step of documenting how I go with each one of these. Depending on the project there might be bigger or less degrees of automations but here goes my checklist
+Looking back at this I find two tasks that I don't see being automated that much and that don't often have very good track of having process I follow. Development and peer review. And as I get bored very quickly, I think I should be taking a step of documenting how I go with each one of these. Depending on the project there might be bigger or less degrees of automations but here goes my checklist
 
 ## Development checklist
 
 - [ ] What are the requirements?
 - [ ] Is there an architecture design?
-- [ ]
+- [ ] What tests can I think of? Can I automate those?
+- [ ] Write the mocked implementation. Divide hard parts into multiple PR's
+- [ ] Write some logs on the stepping being done. Will be useful for later debugging
+- [ ] Make sure the tests and the code can be run on debug locally
 
 ## Peer review checklist
 
@@ -27,7 +34,7 @@ Looking back at this I see two kinds of jobs that I don't see being automated th
 - [ ] Skim the entire code. Take notes on things you find odd
 - [ ] List resource changes
 - [ ] Given the description list the tests you think would better match this
-- [ ] Run the tests locally
+- [ ] Run the tests locally. Debug if possible
 - [ ] Check if your expectation of the tests are matched by the test suite
 - [ ] Format the code
 
