@@ -1,6 +1,6 @@
 ---
 title: "Checklists"
-date: "2023-11-20"
+date: "2023-11-21"
 tags: 
     - development
     - agile
