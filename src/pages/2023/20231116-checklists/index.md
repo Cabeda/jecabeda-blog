@@ -11,7 +11,7 @@ tags:
 
 > This document will be a live document where I reflect and update on my most current view
 
-So, I've been one to be methodic on my practice and I truly thing automation in software engineering is one of the secret powers of the industry. Taking inspiration from an article I read [3 years ago](https://blog.acolyer.org/2020/01/08/ironies-of-automation/), I find that for any given repeating task this is the expected lifecycle:
+So, I've been one to be methodic on my practice and I truly think automation in software engineering is one of the secret powers of the industry. Taking inspiration from an article I read [3 years ago](https://blog.acolyer.org/2020/01/08/ironies-of-automation/), I find that for any given repeating task this is the expected lifecycle:
 
 1. Document the process
 2. Improve the documents on each iteration
