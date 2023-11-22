@@ -11,7 +11,7 @@ tags:
 
 > This document will be a live document where I reflect and update on my most current view
 
-So, I've been one to be methodic on my practice and I truly think automation in software engineering is one of the secret powers of the industry. Taking inspiration from an article I read [3 years ago](https://blog.acolyer.org/2020/01/08/ironies-of-automation/), I find that for any given repeating task this is the expected lifecycle:
+So, I've been one to be methodic on my practice and I truly think automation in software engineering is one of the secret powers of the industry. Taking inspiration from an article I read [3 years ago](https://blog.acolyer.org/2020/01/08/ironies-of-automation/), I find that for any recurring task this is the expected lifecycle:
 
 1. Document the process
 2. Improve the documents on each iteration
@@ -48,6 +48,4 @@ Looking back at this I find two tasks that I don't see being automated that much
 
 Given the checklist above I see that these are very high levels steps which can be further documented (phase 2 of automation) and the scripts to facilitate them can also be identified. As I've been worked across multiple languages (python, JS, TS, terraform) each project will have diferent processes but I think that just shows that I'm moving  between phases 1-3.
 
-If I'll be seeing step anytime soon? Not really. Tools like copilot are easing up the process but they are not removing the human in the loop.
-
-And from the list above I guess another checklist on which tests to create would be a great helper. But I'll leave it for another time
+Looking back at the lists above I guess I need another checklist to guide on the tests creation. But I'll leave it for another time.
