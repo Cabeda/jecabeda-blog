@@ -18,6 +18,8 @@ Progress: 0%
 
 Progress: 26%
 
+Gotten a [PR](https://github.com/duckdb/duckdb-web/pull/1576) closed with guide on how to query S3 iceberg tables. You can check it on [S3 Iceberg Import](https://duckdb.org/docs/guides/import/s3_iceberg_import) guide. Nothing major but feels good to contribute. I've also gotten a small incident as I spent way too much on AWS with the notebooks and the interactive sessions. Seeing  if I can get it fixed but at least I got the iceberg created and running! (still need to optimize, and if possible before the presentation).
+
 ### Project
 
 - [ ] How many trips are being canceled?
@@ -30,8 +32,6 @@ Progress: 26%
 - [ ] (Optional) Optimize the table for iceberg to only run for new partitions (and enable daily runs)
 
 ### Presentation
-
-Gotten all the topics below written but it's basically the skeleton of the presentation.
 
 - [ ] Intro to the problem
 - [ ] Present the loader to sqlite
